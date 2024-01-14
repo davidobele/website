@@ -28,6 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
             button.style.borderColor = 'black';
         });
     
+        // Add a hover style for buttons when the background is white
         buttons.forEach(button => {
             button.addEventListener('mouseover', () => {
                 button.style.backgroundColor = 'black';
@@ -55,6 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
             button.style.borderColor = 'white';
         });
     
+        // Add a hover style for buttons when the background is black
         buttons.forEach(button => {
             button.addEventListener('mouseover', () => {
                 button.style.backgroundColor = 'white';
@@ -70,5 +72,13 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     
         localStorage.setItem("visualPreference", "dark");
-    }    
+    }
+    
+
+    // Check the saved preference on page load and set the toggle accordingly
+    if (savedPreference === "light") {
+        toggleSwitch.checked = true;
+    } else {
+        toggleSwitch.checked = false;
+    }
 });
