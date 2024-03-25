@@ -21,6 +21,7 @@ i {
     font-size: 1.5em;
     cursor: pointer;
     transition: transform 0.3s ease 0;
+    transition: opacity 0.6s ease;
 }
 
 i:hover:not(.fa-house) {
@@ -76,6 +77,10 @@ button:hover {
     display: flex;
     flex-direction: row;
     margin-top: 0.2em;
+}
+
+.socials:hover > :not(:hover) {
+    opacity: 0.4;
 }
 
 .view {
