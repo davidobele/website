@@ -35,7 +35,7 @@ a {
 
 h1, h5, h3, p {
     margin: 0;
-    padding: 0.5em
+    padding: 0.3em
 }
 
 button {
@@ -125,10 +125,4 @@ button:hover {
     -webkit-transform: translate3d(100%, 0, 0);
     -moz-transform: translate3d(100%, 0, 0);
     transform: translate3d(100%, 0, 0);
-}
-
-.footer {
-    bottom: 0;
-    left: 0;
-    width: 100%;
 }
