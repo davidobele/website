@@ -28,30 +28,9 @@ i:hover:not(.fa-house) {
     transform: translateY(-0.1em);
 }
 
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
 h1, h5, h3, p {
     margin: 0;
     padding: 0.3em
-}
-
-button {
-    background-color: transparent;
-    border: 2px solid white;
-    color: white;
-    font-weight: bolder;
-    font-size: 80%;
-    height: 40px;
-    width: 80px;
-}
-
-button:hover {
-    background-color: white;
-    color: black;
-    cursor: pointer;
 }
 
 .header {
@@ -64,13 +43,6 @@ button:hover {
 
 .home {
     padding: 0.5em;
-}
-
-.menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 0.8em;
 }
 
 .socials {
@@ -86,14 +58,6 @@ button:hover {
 .view {
     display: flex;
     padding: 1em;
-}
-
-.uncc {
-    color: green;
-}
-
-.uncc:hover {
-    text-decoration: underline;
 }
 
 .switch input {
