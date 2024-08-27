@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 document.addEventListener("DOMContentLoaded", function () {
     const savedPreference = localStorage.getItem("visualPreference");
     const toggleSwitch = document.querySelector('.switch input');
@@ -29,6 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
             button.style.borderColor = 'black';
         });
     
+        // Add a hover style for buttons when the background is white
         buttons.forEach(button => {
             button.addEventListener('mouseover', () => {
                 button.style.backgroundColor = 'black';
@@ -56,6 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
             button.style.borderColor = 'white';
         });
     
+        // Add a hover style for buttons when the background is black
         buttons.forEach(button => {
             button.addEventListener('mouseover', () => {
                 button.style.backgroundColor = 'white';
@@ -71,49 +72,13 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     
         localStorage.setItem("visualPreference", "dark");
-    }    
-});
-
-=======
-document.addEventListener('DOMContentLoaded', function () {
-
-    var savedColorPreference = localStorage.getItem('colorPreference');
-    var savedToggleState = localStorage.getItem('toggleState');
-
-    if (savedColorPreference === 'light') {
-        applyLightMode();
-    } else {
-        applyDarkMode();
     }
+    
 
-    var switchInput = document.querySelector('.switch input');
-    switchInput.checked = savedToggleState === 'checked';
-});
-
-function visual() {
-    var switchInput = document.querySelector('.switch input');
-
-    if (switchInput.checked) {
-        applyLightMode();
-        localStorage.setItem('colorPreference', 'light');
-        localStorage.setItem('toggleState', 'checked');
+    // Check the saved preference on page load and set the toggle accordingly
+    if (savedPreference === "light") {
+        toggleSwitch.checked = true;
     } else {
-        applyDarkMode();
-        localStorage.setItem('colorPreference', 'dark');
-        localStorage.setItem('toggleState', 'unchecked');
+        toggleSwitch.checked = false;
     }
-}
-
-function applyLightMode() {
-    var body = document.body;
-    body.style.backgroundColor = 'white';
-    body.style.color = 'black';
-}
-
-function applyDarkMode() {
-    var body = document.body;
-    body.style.backgroundColor = 'black';
-    body.style.color = 'white';
-}
-
->>>>>>> f069ab74e1f4c392d610c2db7e24da3564db307e
+});
