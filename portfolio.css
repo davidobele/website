@@ -18,15 +18,9 @@ a {
     color: white;
 }
 
-main {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .one {
     max-width: 75%;
+    margin: auto;
 }
 
 footer {
