@@ -16,6 +16,7 @@ window.onload = function() {
 };
 
 function visual() {
+    const toggleSwitch = document.querySelector('.switch input');
     const isLightMode = document.body.style.backgroundColor === 'white';
     
     if (isLightMode) {
@@ -23,10 +24,12 @@ function visual() {
         document.body.style.color = 'white';
         document.querySelectorAll('i').forEach(icon => icon.style.color = 'white');
         localStorage.setItem('theme', 'dark');
+        toggleSwitch.checked = false; 
     } else {
         document.body.style.backgroundColor = 'white';
         document.body.style.color = 'black';
         document.querySelectorAll('i').forEach(icon => icon.style.color = 'black');
         localStorage.setItem('theme', 'light');
+        toggleSwitch.checked = true;
     }
 }
