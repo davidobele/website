@@ -16,8 +16,13 @@ body {
 a {
     text-decoration: none;
     color: white;
+    margin-bottom: 1em;
 }
 
+nav {
+    display: flex;
+    flex-direction: column;
+}
 a:hover {
     text-decoration: underline;
 }
