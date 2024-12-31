@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+body {
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5%;
+}
+
+main * {
+    margin-bottom: 12px;
+}
+
+i {
+    color: white;
+    font-size: 1.5em;
+    margin: 0 0.5em 0 0;
+    padding: 0;
+    transition: transform 0.3s ease 0;
+}
+
+i:hover {
+    transform: translateY(-5px); 
+}
+
+.socials:hover > :not(:hover) {
+    opacity: 0.4;
+}
+
+footer {
+    bottom: 0;
+    width: 100%;
+}
