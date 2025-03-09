@@ -36,18 +36,6 @@ main * {
   margin-bottom: 12px;
 }
 
-.view {
-  display: flex;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-.info {
-  display: flex;
-  flex-direction: column;
-}
-
 .socials {
   width: fit-content;
 }
